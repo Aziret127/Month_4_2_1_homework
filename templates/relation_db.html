@@ -1,0 +1,21 @@
+<h1> список зарегистрированных</h1>
+
+{% for i in userr %}
+
+<p>{{ i.name }}</p>
+<p>Теги</p>
+   <p>Категория</p>
+   {% for j in i.cotegory.all%}
+   <p>#{{ j.name }}</p>
+    {% endfor %}
+
+<p>Кимментарий</p>
+{% for k in i.review.all %}
+
+<p>{{ k.tours }}</p>
+<p>{{ k.choice_tour }}</p>
+
+
+   {%endfor%}
+
+{% endfor%}
