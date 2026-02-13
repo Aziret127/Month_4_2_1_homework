@@ -26,9 +26,9 @@ class Book(models.Model):
     ratiog = models.PositiveBigIntegerField(verbose_name="оценка 1-10", blank=True, null=True)
 
     def __str__(self):
-                return self.title
+         return self.title
 
     class Meta:
-                verbose_name = "книга"
-                verbose_name_plural = "книги "
+        verbose_name = "книга"
+        verbose_name_plural = "книги "
 

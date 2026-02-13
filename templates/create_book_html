@@ -1,0 +1,16 @@
+<center>
+    <h1>дрбавить книгу</h1>
+
+    <form action="/create_prog_lang/" method="post" enctype="multipart/form-data">
+        
+        {% csrt_token %}
+
+        {{form.as_p}}
+
+        <button type="submit">Добавить</button>
+        
+    </form>
+<center>
+
+
+

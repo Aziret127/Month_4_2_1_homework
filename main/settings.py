@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'myShop',
     'relation_db',
     "book",
+    'users',
     
 ]
 

@@ -1,0 +1,9 @@
+<h2>Здравствуйте, <span id="user-nickname">гость</span>!</h2>
+
+<script>
+  // Достаем имя из памяти браузера
+  const nickname = localStorage.getItem('username');
+  if (nickname) {
+    document.getElementById('user-nickname').innerText = nickname;
+  }
+</script>
